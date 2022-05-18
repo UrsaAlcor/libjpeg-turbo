@@ -1,4 +1,4 @@
-LZ4
-===
+libjpeg-turbo
+=============
 
-Compile & install LZ4 as a lmod module
+Compile & install libjpeg-turbo as a lmod module

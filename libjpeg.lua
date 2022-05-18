@@ -1,9 +1,9 @@
 help([[
 Description
 ===========
-Load LZ4 compression library
+Load libjpeg-turbo compression library
 
-* https://github.com/lz4/lz4
+* https://github.com/libjpeg-turbo/libjpeg-turbo
 ]])
 
 local name = "${package}"
