@@ -38,7 +38,7 @@ cd ..
 cd ..
 
 # Setup the module file
-cp libjpeg.lua $module/$version.lua
+cp libjpeg-turbo.lua $module/$version.lua
 
-sed -i -e "s@\${package}@libjpeg@g" $module/$version.lua
+sed -i -e "s@\${package}@libjpeg-turbo@g" $module/$version.lua
 sed -i -e "s@\${version}@$version@g" $module/$version.lua

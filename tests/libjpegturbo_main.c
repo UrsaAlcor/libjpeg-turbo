@@ -1,5 +1,4 @@
-// gcc lz4_main.c -o lz4_main -llz4
-#include "lz4.h"
+#include <turbojpeg.h>
 
 
 int main(int argc, const char* argv[]){
