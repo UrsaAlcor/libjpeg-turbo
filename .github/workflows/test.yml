@@ -35,7 +35,8 @@ jobs:
       run: |
         source /home/runner/.config/mocli/bashrc
         activate_alcor 
-
-        alcor install lz4 --url https://github.com/UrsaAlcor/lz4/releases/download/v0.0.1/lz4_x86_64.zip
-        module load lz4
-        gcc tests/lz4_main.c -o lz4_main -llz4
+        
+        alcor install libjpeg-turbo --url https://github.com/UrsaAlcor/libjpeg-turbo/releases/download/v0.0.1/libjpeg-turbo_x86_64.zip
+        module load libjpeg-turbo
+        gcc tests/libjpegturbo_main.c -o libjpegturbo_main -lturbojpeg
+        gcc tests/libjpeg_main.c -o libjpegturbo_main -ljpeg
