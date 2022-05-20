@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <jpeglib.h>
 
 int main(int argc, const char* argv[]){
