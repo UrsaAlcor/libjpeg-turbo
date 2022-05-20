@@ -1,15 +1,10 @@
 #include <jpeglib.h>
 
-
 int main(int argc, const char* argv[]){
 
+    j_compress_ptr* ptr;
 
-    const char* src;
-    const char* dst;
-    int srcSize;
-    int dstCapacity;
-
-    int written = LZ4_compress_default(src, dst, srcSize, dstCapacity);
+    jpeg_create_compress(ptr);
 
     return 0;
 }

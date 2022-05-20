@@ -3,13 +3,21 @@
 
 int main(int argc, const char* argv[]){
 
+    const char* filename;
+    int *width;
+    int align;
+    int *height;
+    int *pixelFormat;
+    int flags;
 
-    const char* src;
-    const char* dst;
-    int srcSize;
-    int dstCapacity;
-
-    int written = LZ4_compress_default(src, dst, srcSize, dstCapacity);
+    unsigned char *data = tjLoadImage(
+        filename, 
+        width,
+        align, 
+        height, 
+        pixelFormat,
+        flags
+    );
 
     return 0;
 }
