@@ -24,6 +24,9 @@ cd build
 export CFLAGS="-mtune=haswell"
 export LDFLAGS="-Wl,-z,now"
 
+module load nasm
+
+rm -rf *
 cmake -G"Unix Makefiles"                  \
     -DCMAKE_BUILD_TYPE=Release            \
     -DCMAKE_POSITION_INDEPENDENT_CODE=ON  \

@@ -24,9 +24,21 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt install coreutils gcc
+            
+    - name: Install alcor
+      run: |
+        pip install git+https://github.com/UrsaAlcor/mocli.git
+        alcor init "$(pwd)/aclor"
+        alcor activate --auto
+
+    - name: Install Dependencies
+      run: |
+        alcor install nasm
 
     - name: Build & Install libjpeg-turbo
       run: |
+        source /home/runner/.config/mocli/bashrc
+        activate_alcor
         bash setup.sh ${{ matrix.arch }}
 
     - name: Package Module
